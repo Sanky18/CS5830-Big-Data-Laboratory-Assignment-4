@@ -8,3 +8,13 @@ stages:
     - download.year
     outs:
     - data/downloaded
+  prepare:
+    cmd: python source/prepare.py
+    deps:
+    - data/downloaded
+    - source/prepare.py
+    params:
+    - prepare.locs_id
+    outs:
+    - data/prepared/downloaded_data
+    - data/prepared/downloaded_relevant_fields
