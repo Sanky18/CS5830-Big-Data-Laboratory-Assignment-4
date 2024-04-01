@@ -1,0 +1,10 @@
+stages:
+  download:
+    cmd: python source/download.py
+    deps:
+    - source/download.py
+    params:
+    - download.locs_id
+    - download.year
+    outs:
+    - data/downloaded
