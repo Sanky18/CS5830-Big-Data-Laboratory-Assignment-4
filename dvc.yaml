@@ -6,24 +6,18 @@ stages:
     params:
     - download.locs_id
     - download.year
-    outs:
-    - data
   prepare:
     cmd: python source/prepare.py
     deps:
     - source/prepare.py
     params:
     - prepare.locs_id
-    outs:
-    - data/prepared
   process:
     cmd: python source/process.py
     deps:
     - source/process.py
     params:
     - process.locs_id
-    outs:
-    - data/processed
   evaluate:
     cmd: python source/evaluate.py
     deps:
