@@ -17,3 +17,12 @@ stages:
     outs:
     - data/prepared/downloaded_data
     - data/prepared/downloaded_relevant_fields
+  process:
+    cmd: python source/process.py
+    deps:
+    - source/process.py
+    params:
+    - process.locs_id
+    outs:
+    - data/processed/downloaded_data_process
+    - data/processed/downloaded_relevant_fields_process
