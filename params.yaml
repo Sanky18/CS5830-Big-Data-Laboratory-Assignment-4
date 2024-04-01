@@ -1,3 +1,9 @@
 download:
   year: 2023
   locs_id: 99999913782
+prepare:
+  locs_id: 99999913782
+process:
+  locs_id: 99999913782
+evaluate:
+  locs_id: 99999913782
