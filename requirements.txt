@@ -1,0 +1,11 @@
+scikit-learn>=0.23
+pandas
+seaborn
+matplotlib
+pandas
+requests
+numpy
+pyyaml
+pytest
+pytest-dependency
+pre-commit
