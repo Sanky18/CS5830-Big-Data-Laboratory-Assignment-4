@@ -24,5 +24,3 @@ stages:
     - source/evaluate.py
     params:
     - evaluate.locs_id
-    outs:
-    - output
