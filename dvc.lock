@@ -9,7 +9,7 @@ stages:
       size: 970
     params:
       params.yaml:
-        download.locs_id: 99999904835
+        download.locs_id: 99999904990
         download.year: 2023
   prepare:
     cmd: python source/prepare.py
@@ -20,7 +20,7 @@ stages:
       size: 2798
     params:
       params.yaml:
-        prepare.locs_id: 99999904835
+        prepare.locs_id: 99999904990
   process:
     cmd: python source/process.py
     deps:
@@ -30,7 +30,7 @@ stages:
       size: 2593
     params:
       params.yaml:
-        process.locs_id: 99999904835
+        process.locs_id: 99999904990
   evaluate:
     cmd: python source/evaluate.py
     deps:
@@ -40,4 +40,4 @@ stages:
       size: 3304
     params:
       params.yaml:
-        evaluate.locs_id: 99999904835
+        evaluate.locs_id: 99999904990
