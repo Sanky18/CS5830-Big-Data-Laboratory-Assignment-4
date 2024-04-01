@@ -36,14 +36,8 @@ stages:
     deps:
     - path: source/evaluate.py
       hash: md5
-      md5: 9e17a9b233a987351ce4116f1fde56d2
-      size: 3398
+      md5: 817bd66055a7f6b0882d02c83b1875d5
+      size: 3304
     params:
       params.yaml:
         evaluate.locs_id: 99999904835
-    outs:
-    - path: output
-      hash: md5
-      md5: d7e289370f40ed23f4c40751fdd4440d.dir
-      size: 261
-      nfiles: 1
