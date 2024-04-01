@@ -47,8 +47,11 @@ def compute_r2(params):
         r2_scores[column] = r2
     # Compute overall R2 using variance-weighted approach
     overall_r2 = r2_score(prepared_df[required_columns], processed_df[required_columns], multioutput='variance_weighted')
+    data_dir = 'output'
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
     # Save individual R2 scores and combined R2 to a JSON file
-    output_file_path = os.path.join('output', f"r2.json")
+    output_file_path = os.path.join(data_dir, f"r2.json")
     with open(output_file_path, 'a') as json_file:
         json_file.write(f'\n\n"{locs_id}.csv": ')  # Start a new line with {locs_id}
         json.dump({'individual_r2': r2_scores, 'combined_r2': overall_r2}, json_file)
