@@ -26,3 +26,11 @@ stages:
     outs:
     - data/processed/downloaded_data_process
     - data/processed/downloaded_relevant_fields_process
+  evaluate:
+    cmd: python source/evaluate.py
+    deps:
+    - source/evaluate.py
+    params:
+    - evaluate.locs_id
+    outs:
+    - output
