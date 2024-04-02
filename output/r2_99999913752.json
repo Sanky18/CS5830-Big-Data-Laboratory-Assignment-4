@@ -1,3 +1,9 @@
 
 
-"99999913752.csv": {"individual_r2": {"MeanTemperature": 0.9997478041978051, "DepartureFromNormalAverageTemperature": 0.9881415165610333, "MaximumTemperature": 0.9999879770138415, "MinimumTemperature": 0.9999523214579078}, "combined_r2": 0.999649561364783}
+"99999913752.csv":
+ {"individual_r2": 
+ {"MeanTemperature": 0.9997478041978051, 
+ "DepartureFromNormalAverageTemperature": 0.9881415165610333, 
+ "MaximumTemperature": 0.9999879770138415, 
+ "MinimumTemperature": 0.9999523214579078}, 
+ "combined_r2": 0.999649561364783}
